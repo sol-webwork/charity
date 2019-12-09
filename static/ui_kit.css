@@ -463,3 +463,41 @@ table th{
 		font-size: 1em;
 	}
 }
+
+
+
+/* logogrid */
+.phst_kit_logogrid{
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+	display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 2vw;
+    align-items: center;
+    justify-items: center;
+    padding:50px 0;
+}
+.phst_kit_logogrid img {
+    max-width: 140px;
+    width: 100%;
+    margin: 10px;
+}
+@media screen and (max-width: 1200px){
+	.phst_kit_logogrid img {
+    max-width: 90px;
+}
+}
+
+@media screen and (max-width: 480px){
+	.phst_kit_logogrid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+}
+
+@media screen and (max-width: 375px){
+	.phst_kit_logogrid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+}
+/* logogrid end */
