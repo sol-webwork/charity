@@ -78,3 +78,20 @@ type="text/javascript">jQuery(document).ready(function($) {
     $('.phst_header_navmenu_item').has('.activelink').addClass('activelink_parent');
 });
 /* active link END*/
+
+
+
+
+
+
+// personal area
+(function($) {
+$(function() {
+  $('.phst_personalarea_setting_tabs').on('click', '.phst_personalarea_setting_tab:not(.phst_setting_tab_active)', function() {
+    $(this)
+      .addClass('phst_setting_tab_active').siblings().removeClass('phst_setting_tab_active')
+      .closest('.phst_personalarea_setting_block').find('.phst_personalarea_setting_content').addClass('phst_personalarea_setting_content_none').eq($(this).index()).removeClass('phst_personalarea_setting_content_none');
+  });
+});
+})(jQuery);
+// personal area end

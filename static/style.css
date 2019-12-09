@@ -727,3 +727,39 @@ footer span {
 		font-size: .7em;
 	}
 }
+
+
+
+/* personal area */
+.phst_personalarea_setting_block{
+	width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+    grid-gap: 10px;
+    margin: 100px 0;
+}
+.phst_personalarea_setting_tabs_box{
+	grid-column: span 3;
+}
+.phst_personalarea_setting_container{
+	grid-column: span 9;
+}
+ul.phst_personalarea_setting_tabs{
+	list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.phst_personalarea_setting_tab{
+	cursor: pointer;
+}
+a.phst_personalarea_logout{
+	text-decoration: none;
+    color: #edd7ad;
+}
+.phst_setting_tab_active{
+	color: #D4932B;
+}
+.phst_personalarea_setting_content_none{
+	display: none;
+}
+/* personal area end */

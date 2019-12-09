@@ -494,10 +494,38 @@ table th{
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 30px;
 }
-
+}
 @media screen and (max-width: 375px){
 	.phst_kit_logogrid {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 30px;
 }
+}
 /* logogrid end */
+
+
+
+
+
+
+
+/* personal area */
+.phst_kit_personalarea_cover{
+	background-image: url(https://charity-dev.solutions.ooo/static/img/short_cover.jpg);
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 3em;
+    min-height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0px -20px 20px 700px rgba(23, 22, 22, 0.61);
+}
+.phst_kit_personalarea_cover span{
+	margin: auto;
+    color: #fff;
+    text-align: center;
+    font-size: 3em;
+    max-width: 900px;
+}
+/* personal area end */
