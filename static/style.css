@@ -459,7 +459,7 @@ h1.phst_home_cover_title{
 }
 .body_page ul li,
 .body_page ol li {
-	margin-bottom: 10px;
+	margin-bottom: 1em;
 }
 /* page template end */
 
@@ -735,6 +735,32 @@ footer span {
 
 
 /* personal area */
+
+/** avatar **/
+.phst_personalarea_avatar{
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	color: #BA8E48;
+}
+.phst_personalarea_avatar_photo{
+	width:100px;
+	height:100px;
+	background-color:#d4932a;
+	border-radius:100%;
+	background-position: center;
+    background-size: cover;
+}
+.phst_personalarea_avatar_name{
+	font-size: 1.3em;
+    margin: .4em 0;
+}
+.phst_personalarea_avatar_who{
+	font-style: italic;
+    font-size: 1em;
+}
+/** avatar end **/
+
 .phst_personalarea_setting_block{
 	width: 100%;
     display: grid;
@@ -746,7 +772,7 @@ footer span {
 	grid-column: span 3;
 }
 .phst_personalarea_setting_container{
-	grid-column: span 9;
+	grid-column: span 6;
 }
 ul.phst_personalarea_setting_tabs{
 	list-style-type: none;
@@ -755,6 +781,11 @@ ul.phst_personalarea_setting_tabs{
 }
 .phst_personalarea_setting_tab{
 	cursor: pointer;
+	display: flex;
+	align-items: center;
+}
+.phst_personalarea_setting_tab span{
+	margin:0 10px
 }
 a.phst_personalarea_logout{
 	text-decoration: none;
@@ -766,4 +797,23 @@ a.phst_personalarea_logout{
 .phst_personalarea_setting_content_none{
 	display: none;
 }
+/** send **/
+.phst_personalarea_setting_send{
+	grid-column: span 3;
+	background-color: #AB7F32;
+	color: #FFFFFF;
+	padding: 60px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.phst_personalarea_setting_send_title{
+	font-weight: 600;
+    margin-bottom: 1em;
+}
+.phst_personalarea_setting_send_desc{
+	margin-bottom: 2em;
+    font-size: .9em;
+}
+
 /* personal area end */

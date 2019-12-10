@@ -21,6 +21,7 @@ a.phst_kit_btn_white{
 	white-space: nowrap;
 	letter-spacing: .3px;
 	text-decoration: none;
+	text-align: center;
 }
 a.phst_kit_btn_gold:after,
 a.phst_kit_btn_white:after{

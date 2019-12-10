@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="static/flo_layout.css">
     <link rel="stylesheet" href="static/ui_kit.css">
     <link rel="stylesheet" href="static/swiper.min.css">
+    <link rel="stylesheet" href="static/fontawesome/css/all.css">
 </head>
 
 <body class="dark_body body_logo_bg">
@@ -59,20 +60,32 @@
             
             <!-- content -->
             <div class="phst_personalarea_login_how">Вы вошли как физлицо</div>
-            <div class="phst_personalarea_avatar"></div>
+            <div class="phst_personalarea_avatar">
+                <div class="phst_personalarea_avatar_photo" style="background-image: url(static/img-content/avatar.jpg);"></div>
+                <div class="phst_personalarea_avatar_name">Анна Абрамова</div>
+                <div class="phst_personalarea_avatar_who">Роснефть</div>
+            </div>
             <div class="phst_personalarea_setting_block">
                 <div class="phst_personalarea_setting_tabs_box">
                     <ul class="phst_personalarea_setting_tabs">
-                        <li class="phst_personalarea_setting_tab phst_setting_tab_active"><span>Профиль</span></li>
-                        <li class="phst_personalarea_setting_tab"><span>Безопасность</span></li>
-                        <li class="phst_personalarea_setting_tab"><span>Проекты</span></li>
+                        <!-- табы -->
+                        <li class="phst_personalarea_setting_tab phst_setting_tab_active"><i class="fas fa-user"></i><span>Профиль</span></li>
+                        <li class="phst_personalarea_setting_tab"><i class="fas fa-lock"></i><span>Безопасность</span></li>
+                        <li class="phst_personalarea_setting_tab"><i class="fas fa-briefcase"></i><span>Проекты</span></li>
                     </ul>
-                    <a class="phst_personalarea_logout" href="#">Выйти из аккаунта</a>
+                    <a class="phst_personalarea_setting_tab phst_personalarea_logout" href="#"><i class="fas fa-sign-out-alt"></i> <span>Выйти из аккаунта</span></a>
                 </div>
                 <div class="phst_personalarea_setting_container">
+                    <!-- настройки -->
                     <div class="phst_personalarea_setting_content">1</div>
                     <div class="phst_personalarea_setting_content phst_personalarea_setting_content_none">2</div>
                     <div class="phst_personalarea_setting_content phst_personalarea_setting_content_none">3</div>
+                </div>
+                <!-- send -->
+                <div class="phst_personalarea_setting_send">
+                    <span class="phst_personalarea_setting_send_title">Вы работаете в организации?</span>
+                    <span class="phst_personalarea_setting_send_desc">Подайте заявку организации или фонду для того, чтобы подтвердить вашу принадлежность к организации</span>
+                    <a class="phst_kit_btn_white" href="/about-project/">Отправить заявку</a>
                 </div>
             </div>
             <!-- content end -->
@@ -115,6 +128,7 @@
         <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
         <script src="static/js/swiper.min.js"></script>
         <script src="static/js/phstscript.js"></script>
+        <script src="static/fontawesome/js/all.js"></script>
     </footer>
 </body>
 
