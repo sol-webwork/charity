@@ -240,10 +240,10 @@ ul.phst_header_navmenu_sub{
     letter-spacing: normal;
     font-size: 14px;
 }
-.phst_header_navmenu li:hover ul.phst_header_navmenu_sub{
+/*.phst_header_navmenu li:hover ul.phst_header_navmenu_sub{
 	display:block;
-}
-ul.phst_header_navmenu_sub_vsbl{
+}*/
+.activ_submenu ul.phst_header_navmenu_sub{
 	display:block;
 }
 li.phst_header_navmenu_item_sub{
