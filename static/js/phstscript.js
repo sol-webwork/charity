@@ -17,16 +17,24 @@
 
 
 
-$(document).ready(function(){
-  $('.phst_header_navmenu_item').hover(
-    function() {
-      $( this ).addClass('activ_submenu');
-    }, function() {
-      $( this ).removeClass('activ_submenu');
-    }
-  );
-});
+// $(document).ready(function(){
+//   $('.phst_header_navmenu_item').hover(
+//     function() {
+//       $( this ).addClass('activ_submenu');
+//     }, function() {
+//       $( this ).removeClass('activ_submenu');
+//     }
+//   );
+// });
 
+ $(document).ready(function(){
+$('.phst_header_navmenu_item').mouseover(function(){
+$(this).addClass('activ_submenu');
+});
+$('.phst_header_navmenu_item').mouseleave(function(){
+$(this).removeClass('activ_submenu');
+});
+});
 // меню end
 
 
