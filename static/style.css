@@ -290,6 +290,11 @@ li.phst_header_navmenu_item_sub{
 .phst_home_cover_slogan_col {
 	flex: 3;
 }
+@media screen and (max-width: 1366px){
+	.phst_home_cover_slogan_col{
+		flex: 2;
+	}
+}
 .phst_home_cover_stage_col {
 	flex: 1;
 }
@@ -314,6 +319,11 @@ h1.phst_home_cover_title{
     font-weight: bold;
     text-transform: uppercase;
 }
+@media screen and (max-width: 1366px){
+	.phst_home_cover_slogan_text{
+		font-size: 4em;
+	}
+}
 .phst_home_cover_stage_col{
 	display:flex;
 	flex-direction:column;
@@ -328,6 +338,31 @@ h1.phst_home_cover_title{
     margin-bottom: 20px;
 }
 
+
+@media screen and (max-width: 1200px){
+	.phst_home_cover_row{
+		padding: 50px 0;
+	}
+	.phst_home_cover_about_col{
+		width: 100%;
+    	flex-basis: 100%;
+    	order: 2;
+	}
+	.phst_home_cover_block .phst_home_cover_title{
+		margin: 20px 0;
+		max-width: 700px;
+	}
+	.phst_home_cover_block .phst_home_cover_descr{
+		margin: 20px 0 50px;
+		max-width: 700px;
+	}
+	.phst_home_cover_slogan_col{
+		flex: 1;
+	}
+	.phst_home_cover_stage_col{
+		justify-content: center;
+	}
+}
 /** partners **/ 
 .home_phst_partners_block{
 	background-color:#F8F1F1
