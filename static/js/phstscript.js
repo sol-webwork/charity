@@ -1,3 +1,24 @@
+// меню
+ jQuery('.phst_header_navmenu_item').click(function(event){
+      jQuery(this).find('.phst_header_navmenu_sub').toggleClass('phst_header_navmenu_sub_vsbl');
+ });
+
+
+
+ jQuery(function($){
+  $(document).mouseup(function (e){ // событие клика по веб-документу
+    var div = $(".phst_header_navmenu_sub_vsbl"); // тут указываем class элемента
+    if (!div.is(e.target) // если клик был не по нашему блоку
+        && div.has(e.target).length === 0) { // и не по его дочерним элементам
+      div.toggleClass('phst_header_navmenu_sub_vsbl'); // скрываем его
+    }
+  });
+});
+
+// меню end
+
+
+
    // partners
    var swiper = new Swiper('.phst_partners_swiper', {
       slidesPerView: 1,

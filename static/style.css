@@ -31,10 +31,10 @@ body{
 	font-size:16px;
 	color: #282828;
 }
-/*.body_logo_bg {
+.body_logo_bg {
 	position: relative;
-}*/
-/*.body_logo_bg:before{
+}
+.body_logo_bg:before{
   content:'';
   width:100%;
   height:100%;
@@ -47,7 +47,7 @@ body{
   left:0;
   opacity: .15;
   z-index: -1;
-}*/
+}
 *{
 	box-sizing:border-box;
 	font-family: 'TeXGyreHeros';
@@ -241,6 +241,9 @@ ul.phst_header_navmenu_sub{
     font-size: 14px;
 }
 .phst_header_navmenu li:hover ul.phst_header_navmenu_sub{
+	display:block;
+}
+ul.phst_header_navmenu_sub_vsbl{
 	display:block;
 }
 li.phst_header_navmenu_item_sub{
