@@ -31,9 +31,9 @@ body{
 	font-size:16px;
 	color: #282828;
 }
-.body_logo_bg {
+/*.body_logo_bg {
 	position: relative;
-}
+}*/
 /*.body_logo_bg:before{
   content:'';
   width:100%;
