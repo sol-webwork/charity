@@ -46,6 +46,7 @@ body{
   top:0;
   left:0;
   opacity: .15;
+  z-index: -1;
 }
 *{
 	box-sizing:border-box;
@@ -464,7 +465,7 @@ footer {
 	padding: 4em 0 2em;
     border-top: 1px solid rgba(255, 255, 255, 0.13);
     color: #fff;
-    background-color: #282828;
+    /*background-color: #282828;*/
 }
 footer a {
 	text-decoration: none;
