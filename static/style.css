@@ -34,7 +34,7 @@ body{
 .body_logo_bg {
 	position: relative;
 }
-.body_logo_bg:before{
+/*.body_logo_bg:before{
   content:'';
   width:100%;
   height:100%;
@@ -47,7 +47,7 @@ body{
   left:0;
   opacity: .15;
   z-index: -1;
-}
+}*/
 *{
 	box-sizing:border-box;
 	font-family: 'TeXGyreHeros';
