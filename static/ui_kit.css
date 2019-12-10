@@ -104,8 +104,8 @@ a.phst_kit_btn_white:hover{
 }
 .phst_kit_login_white:before{
 	content:'';
-	width:100%;
-	height:100%;
+	width:20px;
+	height:20px;
 	position:absolute;
 	transform: rotate(45deg);
 	border: 3px double #ffffff;
