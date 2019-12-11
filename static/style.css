@@ -307,8 +307,8 @@ h1.phst_home_cover_title{
     letter-spacing: .3px;
     margin-bottom: 40px;
 }
-.phst_home_cover_descr {
-	font-size: 13px;
+.body_page .phst_home_cover_descr {
+	font-size: 14px;
     line-height: 1.8;
     margin-bottom: 40px;
 }
