@@ -9,24 +9,12 @@
 
 @font-face {
     font-family: 'TeXGyreHeros';
-    src: url('fonts/TeXGyreHeros/eot/texgyreheros-regular-webfont.eot');
-    src: url('fonts/TeXGyreHeros/eot/texgyreheros-regular-webfont.eot?#iefix') format('embedded-opentype'),
+    src: url('fonts/TeXGyreHeros/eot/texgyreheros-regular-webfont.eot'),
          url('fonts/TeXGyreHeros/texgyreheros-regular.otf') format('otf'),
          url('fonts/TeXGyreHeros/woff/texgyreheros-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-}
-
-@font-face {
-    font-family: 'шрифт1';
-    src: url('шрифт1.eot');
-    src: url('шрифт1.eot?#iefix') format('embedded-opentype'),
-         url('шрифт1.woff') format('woff'),
-         url('шрифт1.ttf') format('truetype'),
-         url('шрифт1.svg#cuprumffuregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}      
+}     
 
 @font-face{
 	font-family: 'TeXGyreHeros';
