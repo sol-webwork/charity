@@ -592,6 +592,8 @@ footer span {
 	.phst_header_nav_bar .phst_kit_login_white:before{
 		transform: rotate(0deg);
 		border: 3px double #d3bd8e;
+		width: 100%;
+		height: 100%;
 	}
 	.phst_header_nav_bar .phst_kit_login_white{
 		margin-left: 10px;
