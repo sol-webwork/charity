@@ -136,3 +136,79 @@ $(function() {
 });
 })(jQuery);
 // personal area end
+
+
+
+
+
+
+/* form registration */
+$(document).ready(function() {
+  //material contact form animation
+$('.form_registration').find('.registration_input').each(function() {
+  var targetItem = $(this).parent();
+  if ($(this).val()) {
+    $(this).parent().find('label').css({color: "#ac7100"});
+    $(targetItem).find('label').css({
+      'top': '5px',
+      'fontSize': '14px',
+      'z-index': '2'
+    });
+  }
+})
+$('.form_registration').find('.registration_input').focus(function() {
+  $(this).parent('.input-block').addClass('focus');
+  $(this).parent().find('label').css({color: "#ac7100"});
+  $(this).parent().find('label').animate({
+    'top': '5px',
+    'fontSize': '14px',
+    'z-index': '2'
+  }, 300);
+})
+$('.form_registration').find('.registration_input').blur(function() {
+  if ($(this).val().length == 0) {
+    $(this).parent('.input-block').removeClass('focus');
+     $(this).parent().find('label').css({color: "#1a1919"});
+    $(this).parent().find('label').animate({
+      'top': '25px',
+      'fontSize': '19px',
+      'z-index': '0'
+    }, 300);
+  }
+})
+});
+/** auto-size textarea **/
+$(document).ready(function() {
+$('textarea').on('paste input', function () {
+    if ($(this).outerHeight() > this.scrollHeight){
+        $(this).height(1)
+    }
+    while ($(this).outerHeight() < this.scrollHeight + parseFloat($(this).css("borderTopWidth")) + parseFloat($(this).css("borderBottomWidth"))){
+        $(this).height($(this).height() + 1)
+    }
+});
+});
+/** auto-size textarea end **/
+/** send form **/
+$(document).ready(function() {
+
+  //E-mail Ajax Send
+  $(".form_registration").submit(function() { //Change
+    var th = $(this);
+    $.ajax({
+      type: "POST",
+      url: "mail.php", //Change
+      data: th.serialize()
+    }).done(function() {
+      alert("Thank you!");
+      setTimeout(function() {
+        // Done Functions
+        th.trigger("reset");
+      }, 1000);
+    });
+    return false;
+  });
+
+});
+/** send form end **/
+/* form registration end */

@@ -53,11 +53,9 @@
             </div>
         </div>
     </header>
-    
-   <div class="body_page">
+    <div class="body_page">
         <div class="phst_kit_personalarea_cover"><span>Личный кабинет</span></div>
         <div class="flo_ml_container">
-            
             <!-- content -->
             <div class="phst_personalarea_login_how">Вы вошли как физлицо</div>
             <div class="phst_personalarea_avatar">
@@ -77,23 +75,131 @@
                 </div>
                 <div class="phst_personalarea_setting_container">
                     <!-- настройки -->
-                    <div class="phst_personalarea_setting_content">1</div>
-                    <div class="phst_personalarea_setting_content phst_personalarea_setting_content_none">2</div>
+                    <div class="phst_personalarea_setting_content">
+                        <div class="cont_form">
+                            <form class="form_registration">
+                                <div class="row_form">
+                                    <div class="col_form">
+                                        <div class="form-group">
+                                            <label class="form-label" for="name">Name*</label>
+                                            <input type="text" name="name" class="registration_input" id="form_registration" required>
+                                        </div>
+                                    </div>
+                                    <div class="col_form">
+                                        <div class="form-group">
+                                            <label class="form-label" for="surname">Surname*</label>
+                                            <input type="text" name="surname" class="registration_input" id="form_registration" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label" for="position">Position*</label>
+                                    <input type="text" name="position" class="registration_input" id="form_registration" required>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label" for="company_name">Company's name*</label>
+                                    <input type="text" name="company_name" class="registration_input" id="form_registration" required>
+                                </div>
+                                <div class="row_form">
+                                    <div class="col_form">
+                                        <div class="form-group">
+                                            <label class="form-label" for="contry">Contry*</label>
+                                            <input type="text" name="contry" class="registration_input" id="form_registration" required>
+                                        </div>
+                                    </div>
+                                    <div class="col_form">
+                                        <div class="form-group">
+                                            <label class="form-label" for="city">City*</label>
+                                            <input type="text" name="city" class="registration_input" id="form_registration" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label" for="industry">Please select your industry*</label>
+                                    <select name="industry" class="registration_input" required>
+                                        <option value=''></option>
+                                        <option>web design</option>
+                                        <option>design tepograf</option>
+                                        <option>Arizona</option>
+                                    </select>
+                                </div>
+                                <div class="row_form">
+                                    <div class="col_form">
+                                        <div class="form-group">
+                                            <label class="form-label" for="email1">Email 1*</label>
+                                            <input type="email" name="email1" class="registration_input" id="form_registration" required>
+                                        </div>
+                                    </div>
+                                    <div class="col_form">
+                                        <div class="form-group">
+                                            <label class="form-label" for="email2">Email 2</label>
+                                            <input type="email" name="email2" class="registration_input" id="form_registration">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row_form">
+                                    <div class="col_form">
+                                        <div class="form-group">
+                                            <label class="form-label" for="phone1">Phone number 1*</label>
+                                            <input type="text" pattern="[0-9]*" name="phone1" class="registration_input" id="form_registration" required>
+                                        </div>
+                                    </div>
+                                    <div class="col_form">
+                                        <div class="form-group">
+                                            <label class="form-label" for="phone2">Phone number 2</label>
+                                            <input type="text" pattern="[0-9]*" name="phone2" class="registration_input" id="form_registration">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label" for="company_adress">Company's adress</label>
+                                    <input type="text" name="company_adress" class="registration_input" id="form_registration">
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label" for="comments">Comments</label>
+                                    <textarea name="comments" id="registration_input" class="registration_input"></textarea>
+                                </div>
+                                <div class="phst_kit_btn_white"><input type="submit" value="Сохранить"></div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="phst_personalarea_setting_content phst_personalarea_setting_content_none">
+                        <div class="cont_form">
+                            <form class="form_registration">
+                                <div class="form-group">
+                                    <label class="form-label" for="name">Почта</label>
+                                    <input type="text" name="name" class="registration_input" id="form_registration" required>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label" for="position">Текущий пароль</label>
+                                    <input type="text" name="position" class="registration_input" id="form_registration" required>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label" for="company_name">Новый пароль</label>
+                                    <input type="text" name="company_name" class="registration_input" id="form_registration" required>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label" for="company_name">Повторите новый пароль</label>
+                                    <input type="text" name="company_name" class="registration_input" id="form_registration" required>
+                                </div>
+                                <div class="phst_kit_btn_white"><input type="submit" value="Сохранить"></div>
+                            </form>
+                        </div>
+                    </div>
                     <div class="phst_personalarea_setting_content phst_personalarea_setting_content_none">3</div>
                 </div>
                 <!-- send -->
                 <div class="phst_personalarea_setting_send">
-                    <span class="phst_personalarea_setting_send_title">Вы работаете в организации?</span>
-                    <span class="phst_personalarea_setting_send_desc">Подайте заявку организации или фонду для того, чтобы подтвердить вашу принадлежность к организации</span>
-                    <a class="phst_kit_btn_white" href="/about-project/">Отправить заявку</a>
+                    <div class="phst_personalarea_setting_send_box">
+                        <span class="phst_personalarea_setting_send_title">Вы работаете в организации?</span>
+                        <span class="phst_personalarea_setting_send_desc">Подайте заявку организации или фонду для того, чтобы подтвердить вашу принадлежность к организации</span>
+                        <a class="phst_kit_btn_white" href="/about-project/">Отправить заявку</a>
+                    </div>
                 </div>
             </div>
             <!-- content end -->
-
         </div>
-   </div>
-
-
+    </div>
     <footer>
         <div class="flo_ml_container phst_layout_row top_line_footer">
             <div class="clmn_footer"><span>Премия</span> <a href="/about-project/">Общая информация</a>

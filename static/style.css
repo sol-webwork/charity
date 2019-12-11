@@ -825,7 +825,7 @@ footer span {
     margin: 100px 0;
 }
 .phst_personalarea_setting_tabs_box{
-	grid-column: span 3;
+	grid-column: span 2;
 }
 .phst_personalarea_setting_container{
 	grid-column: span 6;
@@ -856,12 +856,14 @@ a.phst_personalarea_logout{
 /** send **/
 .phst_personalarea_setting_send{
 	grid-column: span 3;
+}
+.phst_personalarea_setting_send_box{
 	background-color: #AB7F32;
 	color: #FFFFFF;
 	padding: 60px 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
 }
 .phst_personalarea_setting_send_title{
 	font-weight: 600;
@@ -875,7 +877,75 @@ a.phst_personalarea_logout{
 /* personal area end */
 
 
-
+/* form */
+.cont_form{
+	max-width: 620px; 
+	margin: auto; 
+	padding: 0 20px;
+	box-sizing: border-box;
+	position: relative;
+}
+.row_form{
+	display:grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+   	grid-gap: 0 2rem;
+}
+.form-group{
+	background: #d1b174;
+	margin: 0 0 15px 0;
+	padding:0;
+	border-radius: 3px;
+	height: auto;
+	min-height: 60px;
+	position: relative;
+    box-sizing: border-box;
+}
+.registration_input{
+	min-height: 60px;
+	padding-left:10px;
+	border-radius: 7px;
+	position: relative;
+	z-index: 1;
+	width: 100%;
+	border: none;
+	font-size:17px;
+	background: transparent;
+}
+.form_registration input:focus{
+	outline: none;
+}
+textarea.registration_input{
+	resize: none;
+	height: 20px;
+}
+.form-label {
+	font-size: 19px;
+    position: absolute;
+    left: 10px;
+    top: 25px;
+    display: block;
+    margin: 0;
+    font-weight: 300;
+    z-index: 0;
+    color: #1a1919;
+    line-height: 10px;
+}
+.form_registration .phst_kit_btn_white{
+	padding:0;
+	cursor:pointer;
+}
+.form_registration .phst_kit_btn_white input[type="submit"]{
+	padding: 10px 20px;
+}
+.form_registration input[type="submit"]{
+	background:transparent;
+	color: #ffffff;
+	border:none;
+}
+.form_registration .phst_kit_btn_white:hover input[type="submit"]{
+	color:#000000
+}
+/* form end */
 
 
 

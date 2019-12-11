@@ -7,8 +7,8 @@
 /* section gold end */
 
 /** btn gold and white **/
-a.phst_kit_btn_gold,
-a.phst_kit_btn_white{
+.phst_kit_btn_gold,
+.phst_kit_btn_white{
 	display: inline-block;
 	font-weight: bold;
 	font-size: .8em;
@@ -23,8 +23,8 @@ a.phst_kit_btn_white{
 	text-decoration: none;
 	text-align: center;
 }
-a.phst_kit_btn_gold:after,
-a.phst_kit_btn_white:after{
+.phst_kit_btn_gold:after,
+.phst_kit_btn_white:after{
 	content:'';
 	width: 100%;
 	height:calc(100% + 10px);
@@ -33,8 +33,8 @@ a.phst_kit_btn_white:after{
 	top:-6px;
 	z-index:0;
 }
-a.phst_kit_btn_gold:before,
-a.phst_kit_btn_white:before{
+.phst_kit_btn_gold:before,
+.phst_kit_btn_white:before{
 	content:'';
 	width: 100%;
 	height:100%;
@@ -46,36 +46,38 @@ a.phst_kit_btn_white:before{
 	transition: all 0.3s ease;
 	z-index: -1;
 }
-a.phst_kit_btn_gold:hover.phst_kit_btn_gold:before,
-a.phst_kit_btn_white:hover.phst_kit_btn_white:before{
+.phst_kit_btn_gold:hover.phst_kit_btn_gold:before,
+.phst_kit_btn_white:hover.phst_kit_btn_white:before{
 	transform: scale(1, 1);
 }
 /*** gold ***/
+.phst_kit_btn_gold,
 a.phst_kit_btn_gold{
 	color: #ba8e48;
 	border: 1px solid #ba8e48;
 }
-a.phst_kit_btn_gold:after{
+.phst_kit_btn_gold:after{
 	border: 1px solid #ba8e48;
 }
-a.phst_kit_btn_gold:before{
+.phst_kit_btn_gold:before{
 	background-color: #ba8e48;
 }
-a.phst_kit_btn_gold:hover{
+.phst_kit_btn_gold:hover{
 	color:#ffffff;
 }
 /*** white ***/
+.phst_kit_btn_white,
 a.phst_kit_btn_white{
 	color: #FFFFFF;
 	border: 1px solid #FFFFFF;
 }
-a.phst_kit_btn_white:after{
+.phst_kit_btn_white:after{
 	border: 1px solid #FFFFFF;
 }
-a.phst_kit_btn_white:before{
+.phst_kit_btn_white:before{
 	background-color: #FFFFFF;
 }
-a.phst_kit_btn_white:hover{
+.phst_kit_btn_white:hover{
 	color:#000000;
 }
 /** btn gold and white end **/
