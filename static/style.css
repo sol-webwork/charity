@@ -3,6 +3,7 @@
 @font-face{
 	font-family: 'TeXGyreHeros';
 	src: url('fonts/TeXGyreHeros/texgyreheros-regular.otf');
+	src: url('fonts/TeXGyreHeros/eot/texgyreheroscn-regular-webfont.eot');
 	font-weight: normal;
 	font-style: normal;
 }
