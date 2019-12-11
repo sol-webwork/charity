@@ -820,7 +820,7 @@ footer span {
 /* form */
 .cont_form{
 	width: 100%;
-	padding: 0 20px;
+	/*padding: 0 20px;*/
 	box-sizing: border-box;
 	position: relative;
 	grid-column: span 2;
@@ -831,7 +831,7 @@ footer span {
 .row_form{
 	display:grid;
 	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-   	grid-gap: 0 2rem;
+   	grid-gap: 0 1rem;
 }
 .form-group{
 	background: #d1b174;
@@ -891,7 +891,8 @@ textarea.registration_input{
 
 .phst_personalarea_setting_row{
 	display:grid;
-	grid-template-columns:repeat(auto-fit, minmax(50px, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 10px;
 }
 /* form end */
 
@@ -938,11 +939,16 @@ a.phst_personalarea_logout{
     justify-content: flex-end;
     align-items: start;
 }
+@media screen and (max-width: 930px){
+	.phst_personalarea_setting_send{
+		grid-row: 1;
+	}
+}
 .phst_personalarea_setting_send_box{
 	max-width: 350px;
 	background-color: #AB7F32;
 	color: #FFFFFF;
-	padding: 60px 30px;
+	padding: 10% 6%;
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
