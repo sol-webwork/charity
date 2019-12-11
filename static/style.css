@@ -861,3 +861,22 @@ a.phst_personalarea_logout{
 }
 
 /* personal area end */
+
+
+
+
+
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {  
+   /* Put your IE-only styles here. Works for IS 10 & IE 11*/
+    header:before{
+    content: 'Браузер Internet Explorer не является современным. Пожалуйста, установите любой другой популярный браузер с официального сайта (Chrome, Opera, Mozilla). Это повысит ваш комфорт и будет корректно открывать сайты.';
+    width: 100%;
+    max-width: 700px;
+    margin:auto;
+    padding: 30px 10px;
+    text-align: center;
+    display: block;
+    box-sizing: border-box;
+    }
+}
