@@ -5,7 +5,7 @@
 	src: url('fonts/TeXGyreHeros/texgyreheros-regular.otf');
 	font-weight: normal;
 	font-style: normal;
-}*/
+}
 
 @font-face {
     font-family: 'TeXGyreHeros';
@@ -14,7 +14,15 @@
          url('fonts/TeXGyreHeros/woff/texgyreheros-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-}     
+} */
+
+@font-face {
+    font-family: 'TeXGyreHeros';
+    src: url('fonts/TeXGyreHeros/eot/texgyreheros-regular-webfont.eot') format('embedded-opentype');
+    src: url('fonts/TeXGyreHeros/eot/texgyreheros-regular-webfont.eot?#iefix') format('embedded-opentype'), 
+    	 url('fonts/TeXGyreHeros/woff/texgyreheros-regular-webfont.woff') format('woff'), 
+    	 url('fonts/TeXGyreHeros/ttf/texgyreheros-regular-webfont.ttf') format('truetype');
+}    
 
 @font-face{
 	font-family: 'TeXGyreHeros';
