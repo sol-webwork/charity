@@ -482,7 +482,7 @@ table th{
 .phst_kit_logogrid img {
     max-width: 170px;
     width: 100%;
-    margin: 10px;
+    margin: 30px;
 }
 @media screen and (max-width: 1200px){
 	.phst_kit_logogrid img {
