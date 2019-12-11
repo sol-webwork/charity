@@ -156,7 +156,9 @@ header a {
     align-items: flex-start;
     width: 190px;
 }
-
+.phst_header_nav_col_slogan {
+	margin-bottom: 10px;
+}
 .phst_header_nav_col_slogan a{
 	font-family: 'Lora', serif;
 	font-size: 1.2em;
