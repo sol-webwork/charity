@@ -817,73 +817,16 @@ footer span {
 }
 /** avatar end **/
 
-.phst_personalarea_setting_block{
-	width: 100%;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
-    grid-gap: 10px;
-    margin: 100px 0;
-}
-.phst_personalarea_setting_tabs_box{
-	grid-column: span 2;
-}
-.phst_personalarea_setting_container{
-	grid-column: span 6;
-}
-ul.phst_personalarea_setting_tabs{
-	list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-.phst_personalarea_setting_tab{
-	cursor: pointer;
-	display: flex;
-	align-items: center;
-}
-.phst_personalarea_setting_tab span{
-	margin:0 10px
-}
-a.phst_personalarea_logout{
-	text-decoration: none;
-    color: #edd7ad;
-}
-.phst_setting_tab_active{
-	color: #D4932B;
-}
-.phst_personalarea_setting_content_none{
-	display: none;
-}
-/** send **/
-.phst_personalarea_setting_send{
-	grid-column: span 3;
-}
-.phst_personalarea_setting_send_box{
-	background-color: #AB7F32;
-	color: #FFFFFF;
-	padding: 60px 30px;
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
-}
-.phst_personalarea_setting_send_title{
-	font-weight: 600;
-    margin-bottom: 1em;
-}
-.phst_personalarea_setting_send_desc{
-	margin-bottom: 2em;
-    font-size: .9em;
-}
-
-/* personal area end */
-
-
 /* form */
 .cont_form{
-	max-width: 620px; 
-	margin: auto; 
+	width: 100%;
 	padding: 0 20px;
 	box-sizing: border-box;
 	position: relative;
+	grid-column: span 2;
+}
+.form_registration{
+	max-width: 620px;
 }
 .row_form{
 	display:grid;
@@ -945,7 +888,83 @@ textarea.registration_input{
 .form_registration .phst_kit_btn_white:hover input[type="submit"]{
 	color:#000000
 }
+
+.phst_personalarea_setting_row{
+	display:grid;
+	grid-template-columns:repeat(auto-fit, minmax(50px, 1fr));
+}
 /* form end */
+
+.phst_personalarea_setting_block{
+	width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+    grid-gap: 10px;
+    margin: 100px 0;
+}
+.phst_personalarea_setting_tabs_box{
+	grid-column: span 2;
+}
+.phst_personalarea_setting_container{
+	grid-column: span 7;
+}
+ul.phst_personalarea_setting_tabs{
+	list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.phst_personalarea_setting_tab{
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+}
+.phst_personalarea_setting_tab span{
+	margin:0 10px
+}
+a.phst_personalarea_logout{
+	text-decoration: none;
+    color: #edd7ad;
+}
+.phst_setting_tab_active{
+	color: #D4932B;
+}
+.phst_personalarea_setting_content_none{
+	display: none;
+}
+/** send **/
+.phst_personalarea_setting_send{
+	/*grid-column: span 3;*/
+	display: flex;
+    justify-content: flex-end;
+    align-items: start;
+}
+.phst_personalarea_setting_send_box{
+	max-width: 350px;
+	background-color: #AB7F32;
+	color: #FFFFFF;
+	padding: 60px 30px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+.phst_personalarea_setting_send_title{
+	font-weight: 600;
+    margin-bottom: 1em;
+}
+.phst_personalarea_setting_send_desc{
+	margin-bottom: 2em;
+    font-size: .9em;
+}
+
+
+/** table **/
+.phst_personalarea_setting_content table{
+	margin: 0;
+}
+/* personal area end */
+
+
+
 
 
 
