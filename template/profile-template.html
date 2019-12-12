@@ -1,0 +1,53 @@
+<!-- Это шаблон для профиля пользователя. 
+
+Содержит:
+    1. Обязательный wrapper class "body_profile";
+    2. Обложку "phst_kit_personalarea_cover";
+    3. Информацию о роли пользователя. Это элемент с классом "phst_personalarea_login_how";
+    4. Аватар, имя и должность пользователя в "phst_personalarea_avatar";
+    5. табы "ul.phst_personalarea_setting_tabs" и контент табов "div.phst_personalarea_setting_container". 
+    Количество табов "li.phst_personalarea_setting_tab" должно быть равно количеству "div.phst_personalarea_setting_content".
+    "a.phst_personalarea_setting_tab" не является табом.
+    6. Ссылку на выход из профиля "a.phst_personalarea_setting_tab".
+
+Классы табов:
+    1. Первый "li.phst_personalarea_setting_tab" должен содержать класс "phst_setting_tab_active";
+    2. Первый "div.phst_personalarea_setting_content" должен содержать класс ".phst_personalarea_setting_content_active";
+      
+-->
+
+
+
+
+
+    
+    <div class="body_profile">
+        <div class="phst_kit_personalarea_cover"><span>Личный кабинет</span></div>
+        <div class="flo_ml_container">
+            <!-- content -->
+            <div class="phst_personalarea_login_how">Вы вошли как физлицо</div>
+            <div class="phst_personalarea_avatar">
+                <div class="phst_personalarea_avatar_photo" style="background-image: url();"></div>
+                <div class="phst_personalarea_avatar_name">Change Name</div>
+                <div class="phst_personalarea_avatar_who">Change Position</div>
+            </div>
+            <div class="phst_personalarea_setting_block">
+                <div class="phst_personalarea_setting_tabs_box">
+                    <ul class="phst_personalarea_setting_tabs">
+                        <!-- tabs -->
+                        <li class="phst_personalarea_setting_tab phst_setting_tab_active"><i class=""></i><span></span></li>
+                        <li class="phst_personalarea_setting_tab"><i class=""></i><span></span></li>
+                        <li class="phst_personalarea_setting_tab"><i class=""></i><span></span></li>
+                    </ul>
+                    <a class="phst_personalarea_setting_tab phst_personalarea_logout" href="#"><i class="fas fa-sign-out-alt"></i> <span>Выйти из аккаунта</span></a>
+                </div>
+                <div class="phst_personalarea_setting_container">
+                    <!-- settings -->
+                    <div class="phst_personalarea_setting_content phst_personalarea_setting_content_active"></div>
+                    <div class="phst_personalarea_setting_content"></div>
+                    <div class="phst_personalarea_setting_content"></div>
+            </div>
+            <!-- content end -->
+        </div>
+    </div>
+    

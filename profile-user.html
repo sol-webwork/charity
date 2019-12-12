@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Profile user</title>
+    <link rel="stylesheet" href="static/swiper.min.css">
+    <link rel="stylesheet" href="static/fontawesome/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.2/css/selectize.default.css">
+    <link rel="stylesheet" href="static/style.css">
+    <link rel="stylesheet" href="static/flo_layout.css">
+    <link rel="stylesheet" href="static/ui_kit.css">
+</head>
+
+<body class="dark_body body_logo_bg">
+    <header>
+        <div class="flo_ml_container phst_header_main">
+            <div class="phst_header_logo_col"><a href="/"><img class="phst_header_logo" src="/static/img/logo.png" alt=""></a></div>
+            <div class="phst_header_nav_col">
+                <div class="phst_header_nav_col_slogan"><a href="/">Национальная премия за&nbsp;вклад&nbsp;в&nbsp;благотворительность «Звезда&nbsp;филантропа»</a></div>
+                <div class="phst_header_nav_col_menu">
+                    <div class="phst_header_navmenu_line">&nbsp;</div>
+                    <ul class="phst_header_navmenu">
+                        <li class="phst_header_navmenu_item"><a>О премии</a>
+                            <ul class="phst_header_navmenu_sub">
+                                <li class="phst_header_navmenu_item_sub"><a href="/about-project/">Общая информация</a></li>
+                                <li class="phst_header_navmenu_item_sub"><a href="/charter/">Устав</a></li>
+                                <li class="phst_header_navmenu_item_sub"><a href="/regulation/">Положение о премии</a></li>
+                                <li class="phst_header_navmenu_item_sub"><a href="/sponsorship-offer/">Спонсорский пакет</a></li>
+                                <li class="phst_header_navmenu_item_sub"><a href="/privacy-policy/">Политика конфиденциальности</a></li>
+                            </ul>
+                        </li>
+                        <li class="phst_header_navmenu_item"><a href="/page_dev/#news" onclick="location.hash='news'; location.reload();">Новости</a></li>
+                        <li class="phst_header_navmenu_item"><a href="/page_dev/#winners" onclick="location.hash='winners'; location.reload();">Победители</a></li>
+                        <li class="phst_header_navmenu_item"><a>Рейтинги</a>
+                            <ul class="phst_header_navmenu_sub">
+                                <li class="phst_header_navmenu_item_sub"><a href="/rating-regulation/">Положение о рейтинге</a></li>
+                                <li class="phst_header_navmenu_item_sub"><a href="/files/%D0%90%D0%BD%D0%BA%D0%B5%D1%82%D0%B0_%D0%9D%D0%9A%D0%9E_%D1%84%D0%B0%D0%BD%D0%B4%D1%80%D0%B0%D0%B9%D0%B7%D0%B8%D0%BD%D0%B3.xlsx">Анкета для участия (фандрайзинговые НКО)</a></li>
+                                <li class="phst_header_navmenu_item_sub"><a href="/files/%D0%90%D0%BD%D0%BA%D0%B5%D1%82%D0%B0_%D0%9D%D0%9A%D0%9E_%D0%BB%D0%B8%D1%87%D0%BD%D1%8B%D0%B5_%D0%B8_%D0%BA%D0%BE%D1%80%D0%BF%D0%BE%D1%80%D0%B0%D1%82%D0%B8%D0%B2%D0%BD%D1%8B%D0%B5.xlsx">Анкета для участия (личные и корпоративные НКО)</a></li>
+                            </ul>
+                        </li>
+                        <li class="phst_header_navmenu_item"><a href="/page_dev/#vote" onclick="location.hash='vote'; location.reload();">Голосование</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="phst_header_nav_bar"><a class="phst_kit_btn_gold" href="/admin/login/?next=/admin/">Подать&nbsp;заявку</a> <a class="phst_kit_login_white" href="/admin/login/?next=/admin/"> </a></div>
+            <div class="phst_header_hamburger_col">
+                <div class="phst_header_hamburger_box">
+                    <div class="phst_header_hamburger_line_1">&nbsp;</div>
+                    <div class="phst_header_hamburger_line_2">&nbsp;</div>
+                    <div class="phst_header_hamburger_line_3">&nbsp;</div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="body_profile">
+        <div class="phst_kit_personalarea_cover"><span>Личный кабинет</span></div>
+        <div class="flo_ml_container">
+            <!-- content -->
+            <div class="phst_personalarea_login_how">Вы вошли как частное лицо</div>
+            <div class="phst_personalarea_avatar">
+                <div class="phst_personalarea_avatar_photo" style="background-image: url(static/img-content/avatar.jpg);"></div>
+                <div class="phst_personalarea_avatar_name">Анна Абрамова</div>
+                <div class="phst_personalarea_avatar_who">Роснефть</div>
+            </div>
+            <div class="phst_personalarea_setting_block">
+                <div class="phst_personalarea_setting_tabs_box">
+                    <ul class="phst_personalarea_setting_tabs">
+                        <!-- табы -->
+                        <li class="phst_personalarea_setting_tab phst_setting_tab_active"><i class="fas fa-user"></i><span>Профиль</span></li>
+                        <li class="phst_personalarea_setting_tab"><i class="fas fa-lock"></i><span>Безопасность</span></li>
+                        <li class="phst_personalarea_setting_tab"><i class="fas fa-briefcase"></i><span>Проекты</span></li>
+                    </ul>
+                    <a class="phst_personalarea_setting_tab phst_personalarea_logout" href="#"><i class="fas fa-sign-out-alt"></i> <span>Выйти из аккаунта</span></a>
+                </div>
+                <div class="phst_personalarea_setting_container">
+                    <!-- настройки -->
+                    <div class="phst_personalarea_setting_content phst_personalarea_setting_content_active">
+                        <div class="phst_personalarea_setting_row">
+                            <div class="cont_form">
+                                <form class="form_registration">
+                                    <div class="form-group">
+                                        <label class="form-label" for="id_last_name">Фамилия:</label>
+                                        <input class="registration_input" type="text" name="last_name" maxlength="150" id="id_last_name" value="">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label" for="id_first_name">Имя:</label>
+                                        <input class="registration_input" type="text" name="first_name" maxlength="150" id="id_first_name" value="">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label" for="id_patronymic">Отчество:</label>
+                                        <input class="registration_input" type="text" name="patronymic" maxlength="150" id="id_patronymic" value="">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label" for="id_geo_of_activity">География деятельности:</label>
+                                        <select placeholder="Одно или несколько значений" class="" name="geo_of_activity" id="id_geo_of_activity" multiple="">
+                                           
+                                            <option value="1">Алтайский край</option>
+                                            <option value="2">Амурская область</option>
+                                            <option value="3">Архангельская область</option>
+                                            <option value="4">Астраханская область</option>
+                                            <option value="5">Белгородская область</option>
+                                            <option value="6">Брянская область</option>
+                                            <option value="7">Владимирская область</option>
+                                            <option value="8">Волгоградская область</option>
+                                            <option value="9">Вологодская область</option>
+                                            <option value="10">Воронежская область</option>
+                                            <option value="11">Еврейская автономная область</option>
+                                            <option value="12">Забайкальский край</option>
+                                            <option value="13">Ивановская область</option>
+                                            <option value="14">Иные территории, включая город и космодром Байконур</option>
+                                            <option value="15">Иркутская область</option>
+                                            <option value="16">Кабардино-Балкарская Республика</option>
+                                            <option value="17">Калининградская область</option>
+                                            <option value="18">Калужская область</option>
+                                            <option value="19">Камчатский край</option>
+                                            <option value="20">Карачаево-Черкесская Республика</option>
+                                            <option value="21">Кемеровская область</option>
+                                            <option value="22">Кировская область</option>
+                                            <option value="23">Костромская область</option>
+                                            <option value="24">Краснодарский край</option>
+                                            <option value="25">Красноярский край</option>
+                                            <option value="26">Курганская область</option>
+                                            <option value="27">Курская область</option>
+                                            <option value="28">Ленинградская область</option>
+                                            <option value="29">Липецкая область</option>
+                                            <option value="30">Магаданская область</option>
+                                            <option value="31">Москва</option>
+                                            <option value="32">Московская область</option>
+                                            <option value="33">Мурманская область</option>
+                                            <option value="34">Ненецкий автономный округ</option>
+                                            <option value="35">Нижегородская область</option>
+                                            <option value="36">Новгородская область</option>
+                                            <option value="37">Новосибирская область</option>
+                                            <option value="38">Омская область</option>
+                                            <option value="39">Оренбургская область</option>
+                                            <option value="40">Орловская область</option>
+                                            <option value="41">Пензенская область</option>
+                                            <option value="42">Пермский край</option>
+                                            <option value="43">Приморский край</option>
+                                            <option value="44">Псковская область</option>
+                                            <option value="45">Республика Адыгея (Адыгея)</option>
+                                            <option value="46">Республика Алтай</option>
+                                            <option value="47">Республика Башкортостан</option>
+                                            <option value="48">Республика Бурятия</option>
+                                            <option value="49">Республика Дагестан</option>
+                                            <option value="50">Республика Ингушетия</option>
+                                            <option value="51">Республика Калмыкия</option>
+                                            <option value="52">Республика Карелия</option>
+                                            <option value="53">Республика Коми</option>
+                                            <option value="54">Республика Крым</option>
+                                            <option value="55">Республика Марий Эл</option>
+                                            <option value="56">Республика Мордовия</option>
+                                            <option value="57">Республика Саха (Якутия)</option>
+                                            <option value="58">Республика Северная Осетия - Алания</option>
+                                            <option value="59">Республика Татарстан (Татарстан)</option>
+                                            <option value="60">Республика Тыва</option>
+                                            <option value="61">Республика Хакасия</option>
+                                            <option value="62">Ростовская область</option>
+                                            <option value="63">Рязанская область</option>
+                                            <option value="64">Самарская область</option>
+                                            <option value="65">Санкт-Петербург</option>
+                                            <option value="66">Саратовская область</option>
+                                            <option value="67">Сахалинская область</option>
+                                            <option value="68">Свердловская область</option>
+                                            <option value="69">Севастополь</option>
+                                            <option value="70">Смоленская область</option>
+                                            <option value="71">Ставропольский край</option>
+                                            <option value="72">Тамбовская область</option>
+                                            <option value="73">Тверская область</option>
+                                            <option value="74">Томская область</option>
+                                            <option value="75">Тульская область</option>
+                                            <option value="76">Тюменская область</option>
+                                            <option value="77">Удмуртская Республика</option>
+                                            <option value="78">Ульяновская область</option>
+                                            <option value="79">Хабаровский край</option>
+                                            <option value="80">Ханты-Мансийский автономный округ - Югра</option>
+                                            <option value="81">Челябинская область</option>
+                                            <option value="82">Чеченская Республика</option>
+                                            <option value="83">Чувашская Республика - Чувашия</option>
+                                            <option value="84">Чукотский автономный округ</option>
+                                            <option value="85">Ямало-Ненецкий автономный округ</option>
+                                            <option value="86">Ярославская область</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label" class="form-label" for="id_field_of_activity">Область деятельности:</label>
+                                        <select placeholder="Одно или несколько значений" class="" name="field_of_activity" id="id_field_of_activity" multiple="">
+                                            <option value="1">Здоровье (медицина)</option>
+                                            <option value="2">Образование/ Наука</option>
+                                            <option value="3">Искусство и культура</option>
+                                            <option value="4">Спорт</option>
+                                            <option value="5">Экология</option>
+                                            <option value="6">Милосердие (помощь инвалидам, сиротам и т.д.)</option>
+                                            <option value="7">За вклад (особый вклад в развитие благотворительности)</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label" for="industry">Please select your industry*</label>
+                                        <select name="industry" class="registration_input" required>
+                                            <option value=''></option>
+                                            <option>web design</option>
+                                            <option>design tepograf</option>
+                                            <option>Arizona</option>
+                                        </select>
+                                    </div>
+                                    <div class="phst_kit_btn_white"><input type="submit" value="Сохранить"></div>
+                                </form>
+                            </div>
+                            <!-- send organization -->
+                            <div class="phst_personalarea_setting_send">
+                                <div class="phst_personalarea_setting_send_box">
+                                    <span class="phst_personalarea_setting_send_title">Вы работаете в организации?</span>
+                                    <span class="phst_personalarea_setting_send_desc">Подайте заявку организации или фонду для того, чтобы подтвердить вашу принадлежность к организации</span>
+                                    <a class="phst_kit_btn_white" href="/about-project/">Отправить заявку</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="phst_personalarea_setting_content phst_personalarea_setting_content_none">
+                        <div class="cont_form">
+                            <form class="form_registration">
+                                <div class="form-group">
+                                    <label class="form-label" for="name">Почта</label>
+                                    <input type="text" name="name" class="registration_input" id="form_registration" required>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label" for="position">Текущий пароль</label>
+                                    <input type="text" name="position" class="registration_input" id="form_registration" required>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label" for="company_name">Новый пароль</label>
+                                    <input type="text" name="company_name" class="registration_input" id="form_registration" required>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label" for="company_name">Повторите новый пароль</label>
+                                    <input type="text" name="company_name" class="registration_input" id="form_registration" required>
+                                </div>
+                                <div class="phst_kit_btn_white"><input type="submit" value="Сохранить"></div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="phst_personalarea_setting_content phst_personalarea_setting_content_none">
+                        <div class="phst_kit_table_wrapper">
+                            <table class="phst_kit_table">
+                                <tbody>
+                                    <tr>
+                                        <th>№</th>
+                                        <th>Название</th>
+                                        <th>Автор</th>
+                                        <th>Номинация</th>
+                                        <th>Ссылка</th>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Поступай правильно</td>
+                                        <td>Название организации</td>
+                                        <td>Наука и образование</td>
+                                        <td><a href="#" target="_blank">смотреть проект</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Детский поэтический конкурс «Волшебная скрижаль»</td>
+                                        <td>Название организации</td>
+                                        <td>Культура и искусство</td>
+                                        <td><a href="#" target="_blank">смотреть проект</a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- content end -->
+        </div>
+    </div>
+    <footer>
+        <div class="flo_ml_container phst_layout_row top_line_footer">
+            <div class="clmn_footer"><span>Премия</span> <a href="/about-project/">Общая информация</a>
+                <!--<a href="/">Жюри</a> <a href="/">Экспертный совет</a> <a href="/">Церемония награждения</a> <a href="/">Победители</a>--> <a href="/regulation/">Положение о премии</a>
+                <!--<a href="/">Новости</a>-->
+            </div>
+            <div class="clmn_footer"><span>Базы данных</span>
+                <!--<a href="/">Рейтинги</a> <a href="/">Фонды</a> <a href="/">Люди</a>-->
+            </div>
+            <div class="clmn_footer"><span>Личный кабинет</span> <a href="/admin/login/?next=/admin/">Регистрация</a> <a href="/admin/login/?next=/admin/">Подать заявку</a>
+                <!--<a href="/">Голосование</a>-->
+            </div>
+            <div class="clmn_footer"><span>Правовая информация</span> <a href="/privacy-policy/">Политика конфиденциальности</a>
+                <!--<a href="/">Ограничение ответственности</a> <a href="/">Copyright</a>-->
+            </div>
+        </div>
+        <div class="flo_ml_container phst_layout_row bottom_line_footer">
+            <div class="clmn_footer">
+                <p>© 2019 АНО Содействия развитию благотворительности</p>
+                <p>Все права защищены</p>
+            </div>
+            <div class="clmn_footer">
+                <!--<p></p>
+<p>Москва, Весковский переулок, стр. 3, вход со стороны проектируемого проезда</p>-->
+            </div>
+            <div class="clmn_footer">
+                <p>+7(495)617-0777</p>
+                <p><a href="mailto:info@ncaward.com">info@ncaward.com</a></p>
+            </div>
+            <div class="clmn_footer social_link_footer"><a href="/">Facebook</a> <a href="/">Twitter</a> <a href="/">ВКонтакте</a> <a href="/">Одноклассники</a></div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="static/js/swiper.min.js"></script>
+        <script src="static/fontawesome/js/all.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.2/js/standalone/selectize.js"></script>
+        <script src="static/js/phstscript.js"></script>
+    </footer>
+</body>
+
+</html>
