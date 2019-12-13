@@ -1,9 +1,8 @@
 <!-- Это шаблон/документация для форм. 
 
-    1. <form> лежит в "div.cont_form";
-    2. <form> содержит класс form_registration;
+    1. <form> содержит класс form_registration;
     
-    3.  hidden
+    2.  hidden
 
         text              лежит в "form-group"      input class "registration_input"       label class "form-label" 
 
@@ -25,12 +24,12 @@
 
         file              лежит в "form-file"       input class ""                         label class ""
 
-        submit            лежит в "form_submit"     этот же wrapper имеет class ui kit (phst_kit_btn_white или phst_kit_btn_gold)
+        submit            лежит в "btn_login"       wrapper имеет class ui kit (phst_kit_btn_white или phst_kit_btn_gold)
 -->
 
 
 
-<div class="cont_form">
+
     <form class="form_registration" method="POST" enctype="" action="">
         <!-- hidden  -->
         <input type="hidden" name="" value="">
@@ -104,7 +103,8 @@
         </div>
 
         <!-- submit -->
-        <div class="form_submit phst_kit_btn_white"><input type="submit" value="Сохранить"></div>
+        <div class="btn_login">
+            <div class="phst_kit_btn_white"><input type="submit" value=""></div>
+        </div>
 
     </form>
-</div>

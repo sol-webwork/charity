@@ -668,7 +668,7 @@
      margin-bottom: 45px;
  }
 
- .project_footer_point_box {
+ .project_footer_point_box .form_registration{
      display: grid;
      grid-template-columns: 1fr 1fr 1fr;
      max-width: 900px;
@@ -677,9 +677,7 @@
      grid-gap: 20px;
 }
 
-.project_footer_point_box .phst_kit_btn_white {
-     width: 50%;
-}
+
 
 @media (max-width: 991px) {
      .project_footer_point_box {
@@ -705,5 +703,4 @@
 
 .project_footer_point_box input {
      padding: 10px;
-     max-width: 60%;
 }
