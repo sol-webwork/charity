@@ -1,33 +1,6 @@
-// меню
-//  jQuery('.phst_header_navmenu_item').click(function(event){
-//       jQuery(this).find('.phst_header_navmenu_sub').toggleClass('phst_header_navmenu_sub_vsbl');
-//  });
 
 
-
-//  jQuery(function($){
-//   $(document).mouseup(function (e){ // событие клика по веб-документу
-//     var div = $(".phst_header_navmenu_sub_vsbl"); // тут указываем class элемента
-//     if (!div.is(e.target) // если клик был не по нашему блоку
-//         && div.has(e.target).length === 0) { // и не по его дочерним элементам
-//       div.toggleClass('phst_header_navmenu_sub_vsbl'); // скрываем его
-//     }
-//   });
-// });
-
-
-
-// $(document).ready(function(){
-//   $('.phst_header_navmenu_item').hover(
-//     function() {
-//       $( this ).addClass('activ_submenu');
-//     }, function() {
-//       $( this ).removeClass('activ_submenu');
-//     }
-//   );
-// });
-
- $(document).ready(function(){
+$(document).ready(function(){
 $('.phst_header_navmenu_item').mouseover(function(){
 $(this).addClass('activ_submenu');
 });
@@ -189,28 +162,7 @@ $('textarea').on('paste input', function () {
 });
 });
 /** auto-size textarea end **/
-/** send form **/
-$(document).ready(function() {
 
-  //E-mail Ajax Send
-  $(".form_registration").submit(function() { //Change
-    var th = $(this);
-    $.ajax({
-      type: "POST",
-      url: "mail.php", //Change
-      data: th.serialize()
-    }).done(function() {
-      alert("Thank you!");
-      setTimeout(function() {
-        // Done Functions
-        th.trigger("reset");
-      }, 1000);
-    });
-    return false;
-  });
-
-});
-/** send form end **/
 /* form registration end */
 
 

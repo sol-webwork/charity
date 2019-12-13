@@ -1,0 +1,110 @@
+<!-- Это шаблон/документация для форм. 
+
+    1. <form> лежит в "div.cont_form";
+    2. <form> содержит класс form_registration;
+    
+    3.  hidden
+
+        text              лежит в "form-group"      input class "registration_input"       label class "form-label" 
+
+        checkbox          лежит в "form-checkbox"   input class "checkbox"                 label class ""
+
+        select (simple)   лежит в "form-group"      input class "registration_input"       label class "form-label" 
+
+        select (multiple) лежит в "form-group"      select class "selector-input"          label class "selector-label"
+
+        textarea          лежит в "form-group"      textarea class "registration_input"    label class "form-label" 
+
+        date              лежит в "form-group"      input class "form_data_input"          label class "form_data_label"
+
+        number            лежит в "form-group"      input class "registration_input"       label class "form-label" 
+
+        email             лежит в "form-group"      input class "registration_input"       label class "form-label" 
+
+        password          лежит в "form-group"      input class "registration_input"       label class "form-label" 
+
+        file              лежит в "form-file"       input class ""                         label class ""
+
+        submit            лежит в "form_submit"     этот же wrapper имеет class ui kit (phst_kit_btn_white или phst_kit_btn_gold)
+-->
+
+
+
+<div class="cont_form">
+    <form class="form_registration" method="POST" enctype="" action="">
+        <!-- hidden  -->
+        <input type="hidden" name="" value="">
+
+        <!-- text  -->
+        <div class="form-group">
+            <label class="form-label" for="">:</label>
+            <input class="registration_input" type="text" name="" maxlength="" id="">
+        </div>
+        
+        <!-- checkbox  -->
+        <div class="form-checkbox">
+            <label for=""></label>
+            <input type="checkbox" name="" id="" checked="">
+        </div>
+
+        <!-- select simple  -->
+        <div class="form-group">
+            <label class="form-label" for=""></label>
+            <select class="registration_input" name="" id="">
+                <option value=""></option>
+                <option value="1"></option>
+            </select>
+        </div>
+
+        <!-- select multiple  -->
+        <div class="form-group">
+            <label class="selector-label" for="id_geo_of_activity"></label>
+            <select class="selector-input" placeholder="Одно или несколько значений" name="" id="" multiple="">
+                <option value=""></option>
+                <option value=""></option>
+            </select>
+        </div>
+        
+        <!-- textarea  -->
+        <div class="form-group">
+            <div class="django-ckeditor-widget" data-field-id="" style="display: inline-block;">
+                <label class="form-label" for=""></label>
+                <textarea class="registration_input" cols="" id="" name="" rows="" data-processed="" data-config="" data-external-plugin-resources="[]" data-id="" data-type=""></textarea>
+            </div>
+        </div>
+
+        <!-- date -->
+        <div class="form-group form-data">
+            <label class="form_data_label" for=""></label>
+            <input class="form_data_input" type="date" name="" id="">
+        </div>
+        
+        <!-- number -->
+        <div class="form-group">
+            <label class="form-label" for=""></label>
+            <input class="registration_input" type="number" name="number_of_staff" value="0" min="0" required="" id="id_number_of_staff">
+        </div>
+
+        <!-- email -->
+        <div class="form-group">
+            <label class="form-label" for=""></label>
+            <input class="registration_input" type="email" name="" id="" required>
+         </div>
+
+        <!-- password -->
+         <div class="form-group">
+            <label class="form-label" for=""></label>
+            <input class="registration_input" type="password" name="" id="" required>
+         </div>
+
+         <!-- file  -->
+        <div class="form-file">
+            <label for=""></label>
+            <input type="file" name="" id="">
+        </div>
+
+        <!-- submit -->
+        <div class="form_submit phst_kit_btn_white"><input type="submit" value="Сохранить"></div>
+
+    </form>
+</div>
