@@ -834,7 +834,7 @@ footer span {
    	grid-gap: 0 1rem;
 }
 .form-group{
-	background: #d1b174;
+	background: #f6f0e1;
 	margin: 0 0 15px 0;
 	padding:0;
 	border-radius: 3px;
@@ -990,259 +990,82 @@ a.phst_personalarea_logout{
 
 /* option multiple */
 
-
-
-/*.drop {
-  position: relative;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+.selector-label{
+    position: absolute;
+    left: 10px;
+    display: block;
+    margin: 0;
+    font-weight: 300;
+    line-height: 10px;
+    color: rgb(172, 113, 0);
+    top: 5px;
+    font-size: 14px;
+    z-index: 2;
 }
-.drop.open {
-  z-index: 100;
+.selectize-input{
+	background:transparent;
+	border:none;
+	padding-top: 25px;
 }
-.drop.open .drop-screen {
-  z-index: 100;
-  display: block;
+.selectize-input input::placeholder{
+	/*font-size:17px;*/
+	color:#000000
 }
-.drop.open .drop-options {
-  z-index: 200;
-  max-height: 200px;
+.selectize-dropdown, .selectize-input, .selectize-input input {
+    color: #303030;
+    font-family: inherit;
+    font-size: 17px;
+    line-height: 18px;
+    -webkit-font-smoothing: inherit;
+    width: 100%!important;
 }
-.drop.open .drop-display {
-  z-index: 200;
-  border-color: #465;
+.selectize-dropdown [data-selectable].option {
+    opacity: 1;
+    padding: 12px 7px;
+    line-height: 1.2;
 }
-.drop select {
-  display: none;
+.selectize-control.multi .selectize-input.has-items {
+    padding: 25px 8px 3px;
 }
-.drop .drop-screen {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  background: #000;
-  top: 0px;
-  left: 0px;
-  opacity: 0;
-  display: none;
-  z-index: 1;
+.selectize-control.multi .selectize-input>div {
+    cursor: pointer;
+    margin: 0 3px 3px 0;
+    padding: 5px 7px;
+    background: #f2f2f2;
+    color: #303030;
+    border: none;
+    border-radius: 3px;
 }
-.drop .drop-display {
-  position: relative;
-  padding: 20px 20px 15px 5px;
-  width: 100%;
-  z-index: 1;
-  min-height: 60px;
-}
-.drop .drop-display:hover:after {
-  opacity: 0.75;
-}
-.drop .drop-display:after {
-  font-family: Font Awesome\ 5 Free;
-  font-weight: 900;
-  font-style: normal;
-  cursor:pointer;
-  content: "\f0d7";
-  position: absolute;
-  right: 10px;
-  top: 12px;
-  font-size: 24px;
-  color: #444;
-}
-.drop .drop-display .item {
-  position: relative;
-  display: inline-block;
-  margin: 5px 5px -4px 0px;
-  padding: 0px 10px 0px 10px;
-  overflow: hidden;
-  height: 40px;
-  line-height: 36px;
-  color: #000000;
-  background: aliceblue;
-  border-radius: 6px;
-}
-.drop .drop-display .item .btnclose {
-  color: #444;
-  position: absolute;
-  font-size: 16px;
-  right: 5px;
-  top: 10px;
-  cursor: pointer;
-}
-.drop .drop-display .item .btnclose:hover {
-  opacity: 0.75;
-}
-.drop .drop-display .item.remove {
-  -webkit-animation: removeSelected 0.2s, hide 1s infinite;
-          animation: removeSelected 0.2s, hide 1s infinite;
-  -webkit-animation-delay: 0s, 0.2s;
-          animation-delay: 0s, 0.2s;
-}
-.drop .drop-display .item.add {
-  -webkit-animation: addSelected 0.2s;
-          animation: addSelected 0.2s;
-}
-.drop .drop-display .item.hide {
-  display: none;
-}
-.drop .drop-options {
-  background: #ffffff;
-  position: absolute;
-  width: 100%;
-  max-height: 0px;
-  overflow-y: auto;
-  transition: all 0.25s linear;
-  z-index: 1;
-}
-.drop .drop-options a {
-  display: block;
-  height: 40px;
-  line-height: 40px;
-  padding: 0px 20px;
-  color: #000000;
-  position: relative;
-  max-height: 40px;
-  transition: all .3s;
-  overflow: hidden;
-}
-.drop .drop-options a:hover {
-  background: #eaeae6;
-  cursor: pointer;
-}
-.drop .drop-options a.remove {
-  -webkit-animation: removeOption 0.2s;
-          animation: removeOption 0.2s;
-  max-height: 0px;
-}
-.drop .drop-options a.add {
-  -webkit-animation: addOption 0.2s;
-          animation: addOption 0.2s;
-}
-.drop .drop-options a.hide {
-  display: none;
-}
-
-@-webkit-keyframes pop {
-  from {
-    -webkit-transform: scale(0);
-            transform: scale(0);
-  }
-  to {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-}
-
-@keyframes pop {
-  from {
-    -webkit-transform: scale(0);
-            transform: scale(0);
-  }
-  to {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-}
-@-webkit-keyframes removeOption {
-  from {
-    max-height: 40px;
-  }
-  to {
-    max-height: 0px;
-  }
-}
-@keyframes removeOption {
-  from {
-    max-height: 40px;
-  }
-  to {
-    max-height: 0px;
-  }
-}
-@-webkit-keyframes addOption {
-  from {
-    max-height: 0px;
-  }
-  to {
-    max-height: 40px;
-  }
-}
-@keyframes addOption {
-  from {
-    max-height: 0px;
-  }
-  to {
-    max-height: 40px;
-  }
-}
-@-webkit-keyframes removeSelected {
-  from {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  to {
-    -webkit-transform: scale(0);
-            transform: scale(0);
-  }
-}
-@keyframes removeSelected {
-  from {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  to {
-    -webkit-transform: scale(0);
-            transform: scale(0);
-  }
-}
-@-webkit-keyframes addSelected {
-  from {
-    -webkit-transform: scale(0);
-            transform: scale(0);
-  }
-  to {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-}
-@keyframes addSelected {
-  from {
-    -webkit-transform: scale(0);
-            transform: scale(0);
-  }
-  to {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-}
-@-webkit-keyframes hide {
-  from, to {
-    max-height: 0px;
-    max-width: 0px;
-    padding: 0px;
-    margin: 0px;
-    border-width: 0px;
-  }
-}
-@keyframes hide {
-  from, to {
-    max-height: 0px;
-    max-width: 0px;
-    padding: 0px;
-    margin: 0px;
-    border-width: 0px;
-  }
+.selectize-input .selectize-dropdown{
+	margin-top: 9px;
 }
 
 
-.dropdown_close{
-	font-family: Font Awesome\ 5 Free;
-    font-weight: 900;
-    font-style: normal;
-    cursor:pointer;
-    margin-left:5px;
-}*/
+.form-file{	
+	margin:20px 0 30px;
+	display:flex;
+	flex-direction:column;
+	height:60px;
+	padding:10px;
+}
+.form-file label{
+    left: 10px;
+    display: block;
+    margin: 0 0 15px 0;
+    font-weight: 300;
+    line-height: 10px;
+    color: rgb(255, 255, 255);
+    top: 5px;
+    font-size: 14px;
+    z-index: 2;
+    font-size:17px;
+}
+
+.cont_form .form_submit{
+	margin-top:20px;
+}
+
+
 /* option multiple end */
 
 
