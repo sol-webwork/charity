@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Personal area template</title>
+    <title>Login signin</title>
     <link rel="stylesheet" href="static/style.css">
     <link rel="stylesheet" href="static/flo_layout.css">
     <link rel="stylesheet" href="static/ui_kit.css">
@@ -57,16 +57,25 @@
         <div class="phst_kit_personalarea_cover"><span>Вход</span></div>
         <div class="flo_ml_container">
             <div class="cont_form">
-                <form class="form_registration">
+                <form class="form_registration" method="POST" enctype="" action="">
+                    <input type="hidden" name="" value="">
                     <div class="form-group">
-                        <label class="form-label" for="name">Почта</label>
-                        <input type="text" name="name" class="registration_input" id="form_registration" required>
+                        <label class="form-label" for="email">Почта</label>
+                        <input type="email" name="email" class="registration_input" id="login_email" required>
                     </div>
                     <div class="form-group">
                         <label class="form-label" for="position">Пароль</label>
-                        <input type="text" name="position" class="registration_input" id="form_registration" required>
+                        <input type="password" name="position" class="registration_input" id="login_pass" required>
                     </div>
-                    <div class="phst_kit_btn_white"><input type="submit" value="Войти"></div>
+                    <div class="forgot_pass">
+                        <a href="/">Забыли пароль?</a>
+                    </div>
+                    <div class="login_mess">
+                        <span>Нет аккаунта?<a href="/">Создать</a></span>
+                    </div>
+                    <div class="btn_login">
+                        <div class="phst_kit_btn_white"><input type="submit" value="Войти"></div>
+                    </div>
                 </form>
             </div>
         </div>

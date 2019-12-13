@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Profile corporations</title>
+    <title>Profile fond</title>
     <link rel="stylesheet" href="static/swiper.min.css">
     <link rel="stylesheet" href="static/fontawesome/css/all.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.6/css/selectize.min.css">
@@ -58,10 +58,10 @@
         <div class="phst_kit_personalarea_cover"><span>Личный кабинет</span></div>
         <div class="flo_ml_container">
             <!-- content -->
-            <div class="phst_personalarea_login_how">Вы вошли как корпорация</div>
+            <div class="phst_personalarea_login_how">Вы вошли как фонд</div>
             <div class="phst_personalarea_avatar">
-                <div class="phst_personalarea_avatar_photo" style="background-image: url(https://static.wixstatic.com/media/a16efb_cf52bfa0147b409cbc1be7b1582ee0e5~mv2_d_11385_8630_s_4_2.png/v1/fill/w_738,h_563,al_c,q_85,usm_0.66_1.00_0.01/a16efb_cf52bfa0147b409cbc1be7b1582ee0e5~mv2_d_11385_8630_s_4_2.webp);"></div>
-                <div class="phst_personalarea_avatar_name">Dank Donuts</div>
+                <div class="phst_personalarea_avatar_photo" style="background-image: url(https://upload.wikimedia.org/wikipedia/ru/5/53/Liniya_zhizni_logo.jpg);"></div>
+                <div class="phst_personalarea_avatar_name">Линия жизни</div>
             </div>
             <div class="phst_personalarea_setting_block">
                 <div class="phst_personalarea_setting_tabs_box">
@@ -79,7 +79,7 @@
                         <div class="phst_personalarea_setting_row">
                             <div class="cont_form">
                                 <form class="form_registration" method="POST" enctype="multipart/form-data" action="/fund_profile/">
-                                    <input type="hidden" name="csrfmiddlewaretoken" value="puU7PEmmfb4YgmotpQJ4TAr8M4AVlVeiAolJqqa1MHf2Vs0kd8git2osenoRaL9i">
+                                    <input type="hidden" name="csrfmiddlewaretoken" value="MaRjEgYZjEv4ozZTXPGmFtWnNnfNamD6X4iVf2MEQaG83FBKL7dAfVTHfG3JZcy6">
                                     <div class="form-group">
                                         <label class="form-label" for="id_name">Название:</label>
                                         <input class="registration_input" type="text" name="name" maxlength="150" id="id_name">
@@ -88,72 +88,22 @@
                                         <label for="id_is_worked">Фонд работает:</label>
                                         <input type="checkbox" name="is_worked" id="id_is_worked" checked="">
                                     </div>
-                                    <div class="form-group">
-                                        <label class="form-label" for="id_reg_date">Дата регистрации:</label>
-                                        <input class="registration_input" type="text" name="reg_date" id="id_reg_date">
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="form-label" for="id_itn">ИНН:</label>
-                                        <input class="registration_input" type="text" name="itn" maxlength="150" id="id_itn">
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="form-label" for="id_psrn">ОГРН:</label>
-                                        <input class="registration_input" type="text" name="psrn" maxlength="150" id="id_psrn">
-                                    </div>
                                     <div class="form-file">
                                         <label for="id_logo">Логотип:</label>
                                         <input type="file" name="logo" id="id_logo">
                                     </div>
                                     <div class="form-group">
-                                        
+                                        <label class="form-label" for="id_type_of_fund">Вид фонда:</label>
+                                        <select class="registration_input" name="type_of_fund" id="id_type_of_fund">
+                                            <option value=""></option>
+                                            <option value="1">НКО</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
                                         <div class="django-ckeditor-widget" data-field-id="id_descr" style="display: inline-block;">
                                             <label class="form-label" for="id_descr">Описание:</label>
                                             <textarea class="registration_input" cols="40" id="id_descr" name="descr" rows="10" data-processed="0" data-config="{&quot;skin&quot;: &quot;moono&quot;, &quot;toolbar_Basic&quot;: [[&quot;Source&quot;, &quot;-&quot;, &quot;Bold&quot;, &quot;Italic&quot;]], &quot;toolbar_Full&quot;: [[&quot;Styles&quot;, &quot;Format&quot;, &quot;Bold&quot;, &quot;Italic&quot;, &quot;Underline&quot;, &quot;Strike&quot;, &quot;SpellChecker&quot;, &quot;Undo&quot;, &quot;Redo&quot;], [&quot;Link&quot;, &quot;Unlink&quot;, &quot;Anchor&quot;], [&quot;Image&quot;, &quot;Flash&quot;, &quot;Table&quot;, &quot;HorizontalRule&quot;], [&quot;TextColor&quot;, &quot;BGColor&quot;], [&quot;Smiley&quot;, &quot;SpecialChar&quot;], [&quot;Source&quot;]], &quot;toolbar&quot;: &quot;YourCustomToolbarConfig&quot;, &quot;height&quot;: 291, &quot;width&quot;: 835, &quot;filebrowserWindowWidth&quot;: 940, &quot;filebrowserWindowHeight&quot;: 725, &quot;toolbar_YourCustomToolbarConfig&quot;: [{&quot;name&quot;: &quot;document&quot;, &quot;items&quot;: [&quot;Source&quot;, &quot;-&quot;, &quot;Save&quot;, &quot;NewPage&quot;, &quot;Preview&quot;, &quot;Print&quot;, &quot;-&quot;, &quot;Templates&quot;]}, {&quot;name&quot;: &quot;clipboard&quot;, &quot;items&quot;: [&quot;Cut&quot;, &quot;Copy&quot;, &quot;Paste&quot;, &quot;PasteText&quot;, &quot;PasteFromWord&quot;, &quot;-&quot;, &quot;Undo&quot;, &quot;Redo&quot;]}, {&quot;name&quot;: &quot;editing&quot;, &quot;items&quot;: [&quot;Find&quot;, &quot;Replace&quot;, &quot;-&quot;, &quot;SelectAll&quot;]}, {&quot;name&quot;: &quot;forms&quot;, &quot;items&quot;: [&quot;Form&quot;, &quot;Checkbox&quot;, &quot;Radio&quot;, &quot;TextField&quot;, &quot;Textarea&quot;, &quot;Select&quot;, &quot;Button&quot;, &quot;ImageButton&quot;, &quot;HiddenField&quot;]}, &quot;/&quot;, {&quot;name&quot;: &quot;basicstyles&quot;, &quot;items&quot;: [&quot;Bold&quot;, &quot;Italic&quot;, &quot;Underline&quot;, &quot;Strike&quot;, &quot;Subscript&quot;, &quot;Superscript&quot;, &quot;-&quot;, &quot;RemoveFormat&quot;]}, {&quot;name&quot;: &quot;paragraph&quot;, &quot;items&quot;: [&quot;NumberedList&quot;, &quot;BulletedList&quot;, &quot;-&quot;, &quot;Outdent&quot;, &quot;Indent&quot;, &quot;-&quot;, &quot;Blockquote&quot;, &quot;CreateDiv&quot;, &quot;-&quot;, &quot;JustifyLeft&quot;, &quot;JustifyCenter&quot;, &quot;JustifyRight&quot;, &quot;JustifyBlock&quot;, &quot;-&quot;, &quot;BidiLtr&quot;, &quot;BidiRtl&quot;, &quot;Language&quot;]}, {&quot;name&quot;: &quot;links&quot;, &quot;items&quot;: [&quot;Link&quot;, &quot;Unlink&quot;, &quot;Anchor&quot;]}, {&quot;name&quot;: &quot;insert&quot;, &quot;items&quot;: [&quot;Image&quot;, &quot;Flash&quot;, &quot;Table&quot;, &quot;HorizontalRule&quot;, &quot;Smiley&quot;, &quot;SpecialChar&quot;, &quot;PageBreak&quot;, &quot;Iframe&quot;]}, &quot;/&quot;, {&quot;name&quot;: &quot;styles&quot;, &quot;items&quot;: [&quot;Styles&quot;, &quot;Format&quot;, &quot;Font&quot;, &quot;FontSize&quot;]}, {&quot;name&quot;: &quot;colors&quot;, &quot;items&quot;: [&quot;TextColor&quot;, &quot;BGColor&quot;]}, {&quot;name&quot;: &quot;tools&quot;, &quot;items&quot;: [&quot;Maximize&quot;, &quot;ShowBlocks&quot;]}, {&quot;name&quot;: &quot;about&quot;, &quot;items&quot;: [&quot;About&quot;]}, &quot;/&quot;, {&quot;name&quot;: &quot;yourcustomtools&quot;, &quot;items&quot;: [&quot;Preview&quot;, &quot;Maximize&quot;]}], &quot;tabSpaces&quot;: 4, &quot;extraPlugins&quot;: &quot;div,autolink,autoembed,embedsemantic,autogrow,widget,lineutils,clipboard,dialog,dialogui,elementspath&quot;, &quot;allowedContent&quot;: true, &quot;forcePasteAsPlainText&quot;: false, &quot;language&quot;: &quot;ru&quot;}" data-external-plugin-resources="[]" data-id="id_descr" data-type="ckeditortype"></textarea>
                                         </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="form-label" for="id_address">Адрес:</label>
-                                        <input class="registration_input" type="text" name="address" maxlength="2550" id="id_address">
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="form-label" for="id_phone_number">Телефон:</label>
-                                        <input class="registration_input" type="text" name="phone_number" maxlength="150" id="id_phone_number">
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="form-label" for="id_email">Контактный email:</label>
-                                        <input class="registration_input" type="text" name="email" maxlength="250" id="id_email">
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="form-label" for="id_site">Сайт:</label>
-                                        <input class="registration_input" type="text" name="site" maxlength="250" id="id_site">
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="form-label" for="id_facebook">FaceBook:</label>
-                                        <input class="registration_input" type="text" name="facebook" maxlength="250" id="id_facebook">
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="form-label" for="id_vk">VK:</label>
-                                        <input class="registration_input" type="text" name="vk" maxlength="250" id="id_vk">
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="form-label" for="id_twitter">Twitter:</label>
-                                        <input class="registration_input" type="text" name="twitter" maxlength="250" id="id_twitter">
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="form-label" for="id_youtube">YouTube:</label>
-                                        <input class="registration_input" type="text" name="youtube" maxlength="250" id="id_youtube">
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="form-label" for="id_full_name_of_the_head">Ф.И.О. руководителя:</label>
-                                        <input class="registration_input" type="text" name="full_name_of_the_head" maxlength="250" id="id_full_name_of_the_head">
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="form-label" for="id_phone_number_of_the_head">Телефон руководителя:</label>
-                                        <input class="registration_input" type="text" name="phone_number_of_the_head" maxlength="150" id="id_phone_number_of_the_head">
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="form-label" for="id_email_of_the_head">E-mail руководителя:</label>
-                                        <input class="registration_input" type="email" name="email_of_the_head" maxlength="254" id="id_email_of_the_head">
                                     </div>
                                     <div class="form-group">
                                         <label class="selector-label" for="id_geo_of_activity">География деятельности:</label>
@@ -258,9 +208,76 @@
                                             <option value="7">За вклад (особый вклад в развитие благотворительности)</option>
                                         </select>
                                     </div>
+                                    <div class="form-group">
+                                        <label class="selector-label" for="id_types_of_help">Виды помощи:</label>
+                                        <select class="selector-input" placeholder="Одно или несколько значений" name="types_of_help" id="id_types_of_help" multiple="">
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group form-data">
+                                        <label class="form_data_label" for="id_reg_date">Дата регистрации:</label>
+                                        <input class="form_data_input" type="date" name="reg_date" id="id_reg_date">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label" for="id_itn">ИНН:</label>
+                                        <input class="registration_input" type="text" name="itn" maxlength="150" id="id_itn">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label" for="id_psrn">ОГРН:</label>
+                                        <input class="registration_input" type="text" name="psrn" maxlength="150" id="id_psrn">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label" for="id_address">Адрес:</label>
+                                        <input class="registration_input" type="text" name="address" maxlength="2550" id="id_address">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label" for="id_phone_number">Телефон:</label>
+                                        <input class="registration_input" type="text" name="phone_number" maxlength="150" id="id_phone_number">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label" for="id_email">Контактный email:</label>
+                                        <input class="registration_input" type="text" name="email" maxlength="250" id="id_email">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label" for="id_site">Сайт:</label>
+                                        <input class="registration_input" type="text" name="site" maxlength="250" id="id_site">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label" for="id_facebook">FaceBook:</label>
+                                        <input class="registration_input" type="text" name="facebook" maxlength="250" id="id_facebook">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label" for="id_vk">VK:</label>
+                                        <input class="registration_input" type="text" name="vk" maxlength="250" id="id_vk">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label" for="id_twitter">Twitter:</label>
+                                        <input class="registration_input" type="text" name="twitter" maxlength="250" id="id_twitter">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label" for="id_youtube">YouTube:</label>
+                                        <input class="registration_input" type="text" name="youtube" maxlength="250" id="id_youtube">
+                                    </div>
+                                    <div class="form-file">
+                                        <label for="id_reviews">Отзывы (скан страницы отзыва, либо прикреплённый файл):</label>
+                                        <input type="file" name="reviews" id="id_reviews">
+                                    </div>
                                     <div class="form-file">
                                         <label for="id_details_card">Карточка реквизитов:</label>
                                         <input type="file" name="details_card" id="id_details_card">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label" for="id_full_name_of_the_head">Ф.И.О. руководителя:</label>
+                                        <input class="registration_input" type="text" name="full_name_of_the_head" maxlength="250" id="id_full_name_of_the_head">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label" for="id_phone_number_of_the_head">Телефон руководителя:</label>
+                                        <input class="registration_input" type="text" name="phone_number_of_the_head" maxlength="150" id="id_phone_number_of_the_head">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label" for="id_email_of_the_head">E-mail руководителя:</label>
+                                        <input class="registration_input" type="email" name="email_of_the_head" maxlength="254" id="id_email_of_the_head">
                                     </div>
                                     <div class="form_submit phst_kit_btn_white"><input type="submit" value="Сохранить"></div>
                                 </form>

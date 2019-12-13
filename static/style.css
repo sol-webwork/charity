@@ -860,9 +860,11 @@ footer span {
 textarea.registration_input{
 	resize: none;
 	height: 20px;
+	padding-top: 25px;
+	outline: none;
 }
 .form-label {
-	font-size: 19px;
+	font-size: 16px;
     position: absolute;
     left: 10px;
     top: 25px;
@@ -1014,7 +1016,7 @@ a.phst_personalarea_logout{
 .selectize-dropdown, .selectize-input, .selectize-input input {
     color: #303030;
     font-family: inherit;
-    font-size: 17px;
+    font-size: 16px;
     line-height: 18px;
     -webkit-font-smoothing: inherit;
     width: 100%!important;
@@ -1065,6 +1067,62 @@ a.phst_personalarea_logout{
 	margin-top:20px;
 }
 
+.form-checkbox {
+    margin: 20px 0 20px;
+    padding: 10px;
+    color: #ffffff;
+    display: flex;
+    align-items: flex-end;
+}
+.form_data_label{
+	position: absolute;
+    left: 10px;
+    display: block;
+    margin: 0;
+    font-weight: 300;
+    line-height: 10px;
+    color: rgb(172, 113, 0);
+    top: 5px;
+    font-size: 14px;
+    z-index: 2;
+}
+.form_data_input{
+	background:transparent;
+	border:none;
+	height:100%;
+	/* min-height: 60px; */
+	padding-left: 10px;
+	padding-top: 19px;
+	font-size: 16px;
+}
+
+
+.forgot_pass>a{
+	display:block;
+	margin:10px 0 20px 0;
+	text-decoration:none;
+}
+
+.login_mess{
+	color:#ffffff;
+	margin: 10px 0;
+}
+.login_mess a{
+	margin-left:10px;
+	text-decoration:none;
+}
+.login_mess{
+	color:#ffffff;
+}
+
+.btn_login{
+	display: flex;
+	justify-content: center;
+	margin: 70px 0;
+}
+.form_registration .btn_login>div>input[type="submit"]{
+	    padding: 10px 60px;
+}
 
 /* option multiple end */
 

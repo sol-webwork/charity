@@ -171,7 +171,7 @@ $('.form_registration').find('.registration_input').blur(function() {
      $(this).parent().find('label').css({color: "#1a1919"});
     $(this).parent().find('label').animate({
       'top': '25px',
-      'fontSize': '19px',
+      'fontSize': '16px',
       'z-index': '0'
     }, 300);
   }
@@ -236,6 +236,18 @@ $('#id_geo_of_activity').selectize({
 });
 
 $('#id_field_of_activity').selectize({
+    plugins: ['remove_button'],
+    delimiter: ',',
+    persist: false,
+    create: function(input) {
+        return {
+            value: input,
+            text: input
+        }
+    }
+});
+
+$('#id_types_of_help').selectize({
     plugins: ['remove_button'],
     delimiter: ',',
     persist: false,

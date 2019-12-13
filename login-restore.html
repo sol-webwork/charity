@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login restore password</title>
+    <link rel="stylesheet" href="static/style.css">
+    <link rel="stylesheet" href="static/flo_layout.css">
+    <link rel="stylesheet" href="static/ui_kit.css">
+    <link rel="stylesheet" href="static/swiper.min.css">
+</head>
+
+<body class="dark_body body_logo_bg">
+    <header>
+        <div class="flo_ml_container phst_header_main">
+            <div class="phst_header_logo_col"><a href="/"><img class="phst_header_logo" src="/static/img/logo.png" alt=""></a></div>
+            <div class="phst_header_nav_col">
+                <div class="phst_header_nav_col_slogan"><a href="/">Национальная премия за&nbsp;вклад&nbsp;в&nbsp;благотворительность «Звезда&nbsp;филантропа»</a></div>
+                <div class="phst_header_nav_col_menu">
+                    <div class="phst_header_navmenu_line">&nbsp;</div>
+                    <ul class="phst_header_navmenu">
+                        <li class="phst_header_navmenu_item"><a>О премии</a>
+                            <ul class="phst_header_navmenu_sub">
+                                <li class="phst_header_navmenu_item_sub"><a href="/about-project/">Общая информация</a></li>
+                                <li class="phst_header_navmenu_item_sub"><a href="/charter/">Устав</a></li>
+                                <li class="phst_header_navmenu_item_sub"><a href="/regulation/">Положение о премии</a></li>
+                                <li class="phst_header_navmenu_item_sub"><a href="/sponsorship-offer/">Спонсорский пакет</a></li>
+                                <li class="phst_header_navmenu_item_sub"><a href="/privacy-policy/">Политика конфиденциальности</a></li>
+                            </ul>
+                        </li>
+                        <li class="phst_header_navmenu_item"><a href="/page_dev/#news" onclick="location.hash='news'; location.reload();">Новости</a></li>
+                        <li class="phst_header_navmenu_item"><a href="/page_dev/#winners" onclick="location.hash='winners'; location.reload();">Победители</a></li>
+                        <li class="phst_header_navmenu_item"><a>Рейтинги</a>
+                            <ul class="phst_header_navmenu_sub">
+                                <li class="phst_header_navmenu_item_sub"><a href="/rating-regulation/">Положение о рейтинге</a></li>
+                                <li class="phst_header_navmenu_item_sub"><a href="/files/%D0%90%D0%BD%D0%BA%D0%B5%D1%82%D0%B0_%D0%9D%D0%9A%D0%9E_%D1%84%D0%B0%D0%BD%D0%B4%D1%80%D0%B0%D0%B9%D0%B7%D0%B8%D0%BD%D0%B3.xlsx">Анкета для участия (фандрайзинговые НКО)</a></li>
+                                <li class="phst_header_navmenu_item_sub"><a href="/files/%D0%90%D0%BD%D0%BA%D0%B5%D1%82%D0%B0_%D0%9D%D0%9A%D0%9E_%D0%BB%D0%B8%D1%87%D0%BD%D1%8B%D0%B5_%D0%B8_%D0%BA%D0%BE%D1%80%D0%BF%D0%BE%D1%80%D0%B0%D1%82%D0%B8%D0%B2%D0%BD%D1%8B%D0%B5.xlsx">Анкета для участия (личные и корпоративные НКО)</a></li>
+                            </ul>
+                        </li>
+                        <li class="phst_header_navmenu_item"><a href="/page_dev/#vote" onclick="location.hash='vote'; location.reload();">Голосование</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="phst_header_nav_bar"><a class="phst_kit_btn_gold" href="/admin/login/?next=/admin/">Подать&nbsp;заявку</a> <a class="phst_kit_login_white" href="/admin/login/?next=/admin/"> </a></div>
+            <div class="phst_header_hamburger_col">
+                <div class="phst_header_hamburger_box">
+                    <div class="phst_header_hamburger_line_1">&nbsp;</div>
+                    <div class="phst_header_hamburger_line_2">&nbsp;</div>
+                    <div class="phst_header_hamburger_line_3">&nbsp;</div>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <div class="body_login">
+        <div class="phst_kit_personalarea_cover"><span>Восстановление пароля</span></div>
+        <div class="flo_ml_container">
+            <div class="cont_form">
+                <form class="form_registration" method="POST" enctype="" action="">
+                    <input type="hidden" name="" value="">
+                    <div class="form-group">
+                        <label class="form-label" for="email">Почта</label>
+                        <input type="email" name="email" class="registration_input" id="login_email" required>
+                    </div>
+                    <div class="login_mess">На указанный email будет отправлено письмо с инструкциями по 
+восстановлению пароля</div>
+                    <div class="forgot_pass">
+                        <a href="/">Войти со старым паролем</a>
+                    </div>
+                    <div class="btn_login">
+                        <div class="phst_kit_btn_white"><input type="submit" value="Восстановить пароль"></div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="flo_ml_container phst_layout_row top_line_footer">
+            <div class="clmn_footer"><span>Премия</span> <a href="/about-project/">Общая информация</a>
+                <!--<a href="/">Жюри</a> <a href="/">Экспертный совет</a> <a href="/">Церемония награждения</a> <a href="/">Победители</a>--> <a href="/regulation/">Положение о премии</a>
+                <!--<a href="/">Новости</a>-->
+            </div>
+            <div class="clmn_footer"><span>Базы данных</span>
+                <!--<a href="/">Рейтинги</a> <a href="/">Фонды</a> <a href="/">Люди</a>-->
+            </div>
+            <div class="clmn_footer"><span>Личный кабинет</span> <a href="/admin/login/?next=/admin/">Регистрация</a> <a href="/admin/login/?next=/admin/">Подать заявку</a>
+                <!--<a href="/">Голосование</a>-->
+            </div>
+            <div class="clmn_footer"><span>Правовая информация</span> <a href="/privacy-policy/">Политика конфиденциальности</a>
+                <!--<a href="/">Ограничение ответственности</a> <a href="/">Copyright</a>-->
+            </div>
+        </div>
+        <div class="flo_ml_container phst_layout_row bottom_line_footer">
+            <div class="clmn_footer">
+                <p>© 2019 АНО Содействия развитию благотворительности</p>
+                <p>Все права защищены</p>
+            </div>
+            <div class="clmn_footer">
+                <!--<p></p>
+<p>Москва, Весковский переулок, стр. 3, вход со стороны проектируемого проезда</p>-->
+            </div>
+            <div class="clmn_footer">
+                <p>+7(495)617-0777</p>
+                <p><a href="mailto:info@ncaward.com">info@ncaward.com</a></p>
+            </div>
+            <div class="clmn_footer social_link_footer"><a href="/">Facebook</a> <a href="/">Twitter</a> <a href="/">ВКонтакте</a> <a href="/">Одноклассники</a></div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="static/js/swiper.min.js"></script>
+        <script src="static/js/phstscript.js"></script>
+    </footer>
+</body>
+
+</html>
