@@ -519,7 +519,7 @@ table th{
     background-position: center;
     background-size: cover;
     margin-bottom: 3em;
-    min-height: 400px;
+    min-height: 60vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -532,4 +532,21 @@ table th{
     font-size: 3em;
     max-width: 900px;
 }
+
+@media (max-width: 991px) {
+     .phst_kit_personalarea_cover span {
+         font-size: 2em;
+     }
+ }
+
+ @media (max-width: 774px) {
+     .phst_kit_personalarea_cover span {
+         font-size: 1.5em;
+     }
+ }
 /* personal area end */
+
+/* project_information */
+ .phst_kit_page_project_cover {
+ 	display: grid;
+ }
