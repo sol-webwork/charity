@@ -908,6 +908,15 @@ textarea.registration_input{
 .phst_personalarea_setting_tabs_box{
 	grid-column: span 2;
 }
+
+@media (max-width: 640px) {
+    .phst_personalarea_setting_tabs_box {
+        grid-column: span 5;
+        margin-bottom: 20px;
+        padding-bottom: 1.5em;
+    }
+}
+
 .phst_personalarea_setting_container{
 	grid-column: span 7;
 }
@@ -948,10 +957,12 @@ a.phst_personalarea_logout{
     justify-content: flex-end;
     align-items: start;
 }
-@media screen and (max-width: 930px){
-	.phst_personalarea_setting_send{
-		grid-row: 1;
-	}
+@media screen and (max-width: 930px) {
+    .phst_personalarea_setting_send {
+        grid-row: 1;
+        grid-column: span 2;
+        margin-bottom: 40px;
+    }
 }
 .phst_personalarea_setting_send_box{
 	max-width: 350px;
@@ -962,6 +973,13 @@ a.phst_personalarea_logout{
 	flex-direction: column;
 	align-items: flex-start;
 }
+
+@media screen and (max-width: 930px) {
+    .phst_personalarea_setting_send_box {
+        max-width: 100%;
+    }
+}
+
 .phst_personalarea_setting_send_title{
 	font-weight: 600;
     margin-bottom: 1em;
@@ -1127,7 +1145,12 @@ a.phst_personalarea_logout{
 /* option multiple end */
 
 
-
+@media (max-width: 640px) {
+    .phst_personalarea_login_how {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+}
 
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {  
    /* Put your IE-only styles here. Works for IS 10 & IE 11*/
