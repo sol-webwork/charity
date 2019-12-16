@@ -1085,6 +1085,12 @@ a.phst_personalarea_logout{
 	margin-top:20px;
 }
 
+.form_submit input {
+	position: relative;
+    z-index: 999;
+    cursor: pointer;
+}
+
 .form-checkbox {
     margin: 20px 0 20px;
     padding: 10px;
