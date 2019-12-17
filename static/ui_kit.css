@@ -686,7 +686,7 @@
 }
 
 @media (max-width: 640px) {
-     .project_footer_point_box {
+    .project_footer_point_box .form_registration {
           grid-template-columns: 1fr;
      }
 }
@@ -703,4 +703,8 @@
 
 .project_footer_point_box input {
      padding: 10px;
+}
+
+.project_point_input{
+     max-width: 150px;  
 }
