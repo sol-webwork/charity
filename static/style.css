@@ -896,6 +896,13 @@ textarea.registration_input{
 	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-gap: 10px;
 }
+
+.form_error {
+    list-style-type: none;
+    margin: -10px 0 0 0;
+    padding: 0;
+    color: #f26363;
+}
 /* form end */
 
 .phst_personalarea_setting_block{
